@@ -1,0 +1,21 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-bottom: 8px;
+    background: linear-gradient(#6D31EDFF 0 0) 0 100%/0% 5px no-repeat;
+    animation: l2 2s linear infinite;
+  }
+  .loader:before {
+    content:"Coda";
+    color: black;
+    font-weight: bolder;
+  }
+  .loader::after {
+    content: "Share";
+    font-weight: bolder;
+    color: #6D31EDFF;
+  }
+  @keyframes l2 {to{background-size: 100% 5px}}

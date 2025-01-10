@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+.custom-shadow:focus {
+  box-shadow: 0px 1px 4px 0px #124be6;
+}
+.custom-shadow:focus + label {
+  color: blue;
+}
+.VarelaRound {
+  font-family: "Varela Round";
+}
+input  {
+  outline: none;
+}
+textarea {
+  outline: none;
+}
+select {
+  outline: none;
+}
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(0, 0%, 94%);
+  }
+  100% {
+    background-color: hsl(0, 0%, 99%);
+  }
+}
